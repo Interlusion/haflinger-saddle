@@ -30,6 +30,7 @@ Haflinger Saddle is a Frappe app that brings e-invoicing into ERPNext, built on 
 | :- | :- |
 | GPL-3.0 | The app imports ERPNext (HAFL-ADR-009) |
 | Runs in a Frappe bench | [ADR-001](adr/ADR-001-a-frappe-app.md) |
+| ERPNext 16 and Frappe 16, Python 3.14; Haflinger within one minor version while at 0.x | [ADR-002](adr/ADR-002-toolchain.md) |
 | Haflinger's public API only, `haflinger` and `haflinger.pdf` | HAFL-ADR-012 |
 | No format knowledge of its own | It lives in Haflinger (HAFL-ADR-001) |
 | "ERPNext" and "Frappe" not in the name | Frappe's trademark policy |
@@ -61,7 +62,7 @@ flowchart LR
 
 ## 4. Solution strategy
 
-A Frappe app in the bench, with nothing else to host; XML everywhere, the ZUGFeRD PDF where Ghostscript is installed ([ADR-001](adr/ADR-001-a-frappe-app.md)).
+A Frappe app in the bench, with nothing else to host; XML everywhere, the ZUGFeRD PDF where Ghostscript is installed ([ADR-001](adr/ADR-001-a-frappe-app.md)). The mapping between ERPNext's documents and Haflinger's model in plain Python, tested without a bench; a thin Frappe layer around it, tested in one ([ADR-002](adr/ADR-002-toolchain.md)).
 
 ## 9. Architecture decisions
 
