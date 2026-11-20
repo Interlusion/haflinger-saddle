@@ -1,0 +1,55 @@
+name: Bug report
+description: Haflinger Saddle does something in ERPNext other than its docs say.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Issues are public. Never attach or paste a real invoice, nor anything from one
+        (names, addresses, VAT IDs, bank details, amounts): invoices hold personal and
+        business data. Describe the ERPNext document with placeholders such as Example GmbH
+        and the IBAN DE79000000001234567890. Where an invoice is read, validated or written
+        wrongly whatever ERPNext holds, the library is the place:
+        [Haflinger's issues](https://github.com/interlusion/haflinger/issues). A
+        vulnerability goes through
+        [private vulnerability reporting](https://github.com/interlusion/haflinger-saddle/security/advisories/new)
+        instead (SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: Haflinger Saddle version or commit
+      description: The version, or the commit for an app installed from Git (`git rev-parse HEAD` in `apps/haflinger_saddle`).
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: ERPNext, Frappe and Haflinger versions
+      description: From ERPNext's About dialog, or `bench version`.
+      placeholder: ERPNext 16.55.0, Frappe 16.56.0, haflinger 0.2.0
+    validations:
+      required: true
+  - type: dropdown
+    id: setup
+    attributes:
+      label: Setup
+      options:
+        - Own server with bench
+        - Docker
+        - Frappe Cloud
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did in ERPNext, and what the app did or showed, with any error message.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true

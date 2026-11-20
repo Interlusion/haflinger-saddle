@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/interlusion/haflinger-saddle/security/advisories/new
+    about: Report it privately, never as an issue (SECURITY.md).
+  - name: Haflinger, the library
+    url: https://github.com/interlusion/haflinger/issues
+    about: How an invoice is read, validated or written, whatever ERPNext does.
+  - name: Documentation
+    url: https://github.com/interlusion/haflinger-saddle/blob/main/docs/README.md
+    about: The architecture, the decisions and the backlog.
