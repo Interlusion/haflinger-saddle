@@ -15,6 +15,10 @@ XRechnung and ZUGFeRD e-invoicing for ERPNext, built on [Haflinger](https://gith
 - Not a Peppol access point: Peppol goes through a certified provider.
 - Not affiliated with or endorsed by Frappe Technologies. ERPNext and Frappe are their trademarks.
 
+## Documentation
+
+Start at [docs/README.md](https://github.com/Interlusion/haflinger-saddle/blob/main/docs/README.md): the [architecture](https://github.com/Interlusion/haflinger-saddle/blob/main/docs/arc42/README.md), the [decisions](https://github.com/Interlusion/haflinger-saddle/blob/main/docs/arc42/adr/README.md) and the [backlog](https://github.com/Interlusion/haflinger-saddle/blob/main/docs/backlog/backlog.md).
+
 ## Licence
 
 GPL-3.0, as it builds on ERPNext ([LICENSE](https://github.com/Interlusion/haflinger-saddle/blob/main/LICENSE)). Haflinger itself is Apache-2.0.
