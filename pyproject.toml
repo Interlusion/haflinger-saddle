@@ -1,0 +1,18 @@
+[project]
+name = "haflinger_saddle"
+version = "0.0.0"
+description = "XRechnung and ZUGFeRD e-invoicing for ERPNext, built on Haflinger"
+requires-python = ">=3.14"
+dependencies = []
+
+# Until the app's code comes, the tools of the checks: Markdown formatting and the workflows' check.
+[dependency-groups]
+dev = [
+    "mdformat>=1.0.0",
+    "mdformat-gfm>=1.0.0",
+    "zizmor>=1.32.0",
+]
+
+[tool.uv]
+# The one place uv's version is pinned: uv refuses another locally, and CI's setup-uv reads it.
+required-version = "==0.13.7"
