@@ -1,0 +1,7 @@
+# Local links and their #anchors only (https://lychee.cli.rs/usage/config/).
+offline = true
+include_fragments = "full"
+# The README's links are absolute, as GitHub shows it elsewhere too; they are checked as the local
+# files, below /w, where scripts/check-links.sh mounts the repository. Links into Haflinger stay
+# external, and so unchecked: Haflinger's documents are named by their ID instead.
+remap = ["^https://github\\.com/Interlusion/haflinger-saddle/(blob|tree)/main/(.*)$ file:///w/$2"]

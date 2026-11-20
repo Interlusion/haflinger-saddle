@@ -27,4 +27,5 @@ Haflinger's documents are named by their ID with Haflinger's project code in fro
 - Conventional Commits: `feat`, `fix`, `docs`, `ci`, `chore`, `refactor`, `test`.
 - Keep scripts and agents off `api.github.com`: use `git ls-remote`, `raw.githubusercontent.com`, `releases.atom`.
 - Markdown: one line per paragraph, no hard wrapping. The README's links are absolute (`https://github.com/Interlusion/haflinger-saddle/blob/main/<path>`); the few links into Haflinger are absolute, to its `main` branch; everywhere else they are relative.
+- Checks: `uv run mdformat --check .`, and with Docker `scripts/check-links.sh`, `scripts/check-workflows.sh` and `scripts/check-secrets.sh`; CI runs them, with `uv audit --locked`.
 - Commit or push only when the maintainer asks.

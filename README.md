@@ -19,6 +19,10 @@ XRechnung and ZUGFeRD e-invoicing for ERPNext, built on [Haflinger](https://gith
 
 Start at [docs/README.md](https://github.com/Interlusion/haflinger-saddle/blob/main/docs/README.md): the [architecture](https://github.com/Interlusion/haflinger-saddle/blob/main/docs/arc42/README.md), the [decisions](https://github.com/Interlusion/haflinger-saddle/blob/main/docs/arc42/adr/README.md) and the [backlog](https://github.com/Interlusion/haflinger-saddle/blob/main/docs/backlog/backlog.md).
 
+## Scope
+
+Haflinger Saddle is maintained for our own use. Contributions are welcome ([contributing](https://github.com/Interlusion/haflinger-saddle/blob/main/CONTRIBUTING.md)); support isn't promised. Report vulnerabilities privately, as the [security policy](https://github.com/Interlusion/haflinger-saddle/blob/main/SECURITY.md) describes.
+
 ## Licence
 
 GPL-3.0, as it builds on ERPNext ([LICENSE](https://github.com/Interlusion/haflinger-saddle/blob/main/LICENSE)). Haflinger itself is Apache-2.0.

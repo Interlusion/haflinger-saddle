@@ -1,0 +1,24 @@
+name: Feature
+description: Something the app should do in ERPNext.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        The app maps ERPNext's documents to and from Haflinger's model; the formats and the
+        official rules belong to the library (HAFL-ADR-001). Never attach a real invoice; use
+        placeholders such as Example GmbH.
+  - type: textarea
+    id: need
+    attributes:
+      label: What you want to do in ERPNext
+      description: The task, as a user story if you like, and why the app doesn't cover it yet.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: >-
+        The ERPNext documents and fields involved, and the business terms (BT-…, BG-…) or
+        legal requirement, if you know them.
